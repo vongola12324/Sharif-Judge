@@ -1,5 +1,5 @@
 # gitignore file for Sharif Judge
-# Created by https://www.gitignore.io/api/windows,linux,osx,jetbrains,codeigniter
+# Created by https://www.gitignore.io/api/windows,linux,osx,jetbrains,codeigniter,composer
 
 ### Windows ###
 # Windows image file caches
@@ -131,6 +131,13 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
 
 ### Application ###
 # Ignore Twig Cache Files
@@ -145,3 +152,6 @@ tester/easysandbox/t/*
 
 # Ignore MOSS File
 tester/moss
+
+# dotEnv
+.env
