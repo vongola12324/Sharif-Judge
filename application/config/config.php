@@ -114,7 +114,7 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'SHJ_';
 
 /*
 |--------------------------------------------------------------------------
@@ -311,10 +311,10 @@ $config['cache_query_string'] = FALSE;
 | If you use the Encryption class, you must set an encryption key.
 | See the user guide for more info.
 |
-| https://codeigniter.com/user_guide/libraries/encryption.html
+|
 |
 */
-$config['encryption_key'] = getenv('APP_KEY');
+$config['encryption_key'] = base64_decode(getenv('APP_KEY'));
 
 /*
 |--------------------------------------------------------------------------
